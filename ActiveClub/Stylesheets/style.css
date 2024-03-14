@@ -1,0 +1,1408 @@
+/*global CSS------------------------------------*/
+
+body {
+  /* background: #a3c9a8 url("../images/background.jpg");; */
+  background: white;
+  background-size: cover;
+  background-attachment: fixed;
+
+  color: #545454;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  /* Margins pushes the entire body by the set numbers
+    Auto makes the browser calculate the margins*/
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*max-width limits the entire page to a certain width*/
+  max-width: 2000px;
+  /*padding to separate the words from each other and the max-width*/
+  padding: 3em 3em 3em;
+  text-align: center;
+}
+
+/* CSS FOR HEADER SECTION, COMMON FOR ALL PAGES */
+#header {
+  grid-area: header;
+  border-radius: 10px;
+  padding: 10px;
+ }
+ 
+ 
+ .Logo img {
+  border-radius: 35px;
+  float: left;
+  
+ }
+ 
+ 
+
+
+
+/* FOOTER CSS */
+
+.socials li {
+  display: inline-block;
+  padding: 15px;
+  align-items: center;
+  
+  
+}
+
+#Footer {
+  background: black;
+  border-radius: 5px;
+}
+
+.footerContent {
+  color: white;
+}
+
+/*index.html CSS------------------------------------*/
+
+/* NAVIGATION BAR CSS */
+.nav {
+  float: right;
+  list-style: none;
+  margin-top: 45px;
+  padding: 10px;
+  
+  
+}
+.nav li {
+  display: inline-block;
+
+}
+.nav li a {
+  color: black;
+  text-decoration: none;
+  text-align:center;
+  padding: 15px 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.nav li a:hover {
+  background: #84dcc6;
+  border-radius: 25px;
+  color: #333;
+}
+
+/* INTRO CAROUSEL CSS */
+.introbanner {
+  grid-area: banner;
+}
+
+.intro-slides {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 50px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 50px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 30px;
+  padding: 20px 50px;
+  position: absolute;
+  bottom: 120px;
+  width: 30%;
+  left: 50px;
+  text-align: left;
+  background: lightcyan;
+}
+
+.mySlides a {
+  border: 1px solid black;
+  padding: 5px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 30px;
+  display: inline-block;
+  color: black;
+  
+}
+.mySlides a:hover {
+  background: #00fecb;
+  color: #333;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* WELCOME TEXT CSS */
+.welcome-text {
+  grid-area: welcome-text;
+}
+
+.welcome-text h1 {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+.welcome-text h1 span {
+  color: teal;
+}
+.welcome-text a {
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+  color: black;
+}
+.welcome-text a:hover {
+  background: #84dcc6;
+  color: black;
+}
+
+/* ABOUT TAB CSS */
+.AboutActLife {
+  grid-area: ActLife;
+}
+
+.AboutActLife {
+  text-align: justify;
+  padding: 10px;
+  background: #F8EDEB;
+  
+  color: black;
+
+  border-radius: 15px;
+}
+
+.AboutActLife h2 {
+  color: black;
+  text-align: center;
+}
+
+.UpdatesTab {
+  grid-area: Updates;
+}
+
+.UpdatesTab {
+  text-align: justify;
+  padding: 10px;
+  background: #F8EDEB;
+  
+  border-radius: 15px;
+ 
+  color: black;
+}
+
+.UpdatesTab h2 {
+  color: black;
+  text-align: center;
+}
+
+.TabsHeader {
+  grid-area: TabsHeader;
+  background: #E8E8E4;
+  text-align: left;
+  /* border: 3px solid black; */
+  border-radius: 15px;
+  color: black;
+}
+
+.TabsHeader h2 {
+  font-size: 16px;
+  padding: 10px;
+}
+
+
+
+
+ /* CSS for the Sports Tab   */
+
+.SportsTab img {
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.SportsTab {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  border-radius: 15px;
+  padding-right: 50px;
+  background: #F0EFEB;
+}
+
+/* CSS for the club tab */
+
+.ClubsTab img {
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.ClubsTab {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  border-radius: 15px;
+  padding-right: 50px;
+  background: #F0EFEB;
+}
+
+
+/* CSS for the Esports Tab */
+
+.EsportsTab img {
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.EsportsTab {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  border-radius: 15px;
+  padding-right: 50px;
+  background: #F0EFEB;
+}
+
+/* CSS for the Leisure Tab */
+
+.LeisureTab img {
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.LeisureTab {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  border-radius: 15px;
+  padding-right: 50px;
+  background: #F0EFEB;
+}
+
+/* CSS for the Health Tab */
+
+.HealthTab img {
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.HealthTab {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+
+  border-radius: 15px;
+  padding-right: 50px;
+  background: #F0EFEB;
+}
+
+
+/* CSS for the subscribe Tab */
+
+.SubscribeTab img {
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.SubscribeTab {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  border-radius: 15px;
+  padding-right: 50px;
+  background: #F0EFEB;
+}
+
+.Tabtext h2 {
+  color: black;
+  text-align: center;
+  padding: 5px;
+}
+
+
+
+.Tabtext p {
+  color: black;
+  padding: 10px;
+}
+
+.Tablink {
+  position: relative;
+  bottom: -90px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 5px;
+
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.Tablink :hover {
+  background: #D8E2DC;
+  color: black;
+}
+
+#Footer {
+  grid-area: Footer;
+}
+
+#Footer {
+  background: #E8D1C5;
+  border-radius: 5px;
+}
+
+
+
+
+.grid-container-index {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas:
+    "header header header header"
+    "banner banner banner banner"
+    "welcome-text welcome-text welcome-text welcome-text"
+    "ActLife ActLife Updates Updates"
+    "TabsHeader TabsHeader TabsHeader TabsHeader"
+    "Sports Sports Clubs Clubs"
+    "Esports Esports Leisure Leisure"
+    "Health Health Subscribe Subscribe"
+    "Footer Footer Footer Footer";
+  grid-gap: 10px;
+}
+
+/*Sports.html CSS------------------------------------*/
+
+#header {
+  grid-area: header;
+}
+
+.WelcomeSports {
+  grid-area: WelcomeSports;
+}
+
+.WelcomeSports h1 {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+.WelcomeSports h1 span {
+  color: #B56576;
+}
+
+.stickyNav{
+  grid-area: stickyNav;
+  list-style: none;
+  background: #fcd5ce;
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+
+.stickyNav{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.stickyNav li {
+  display: inline-block;
+}
+.stickyNav li a {
+  color: black;
+  text-decoration: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.stickyNav li a:hover {
+  background: #B56576;
+  border-radius: 25px;
+  color: #333;
+}
+
+
+.SportsArticle-1 {
+  grid-area: Article-1;
+}
+
+.SportsArticle-1 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.SportsArticle-1 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #ffb4a2;
+  border-radius: 15px;
+  color: black;
+}
+
+.SportsArticle-1 h2 {
+  color: black;
+  text-align: justify;
+}
+
+.SportsArticle-2 {
+  grid-area: Article-2;
+}
+
+.SportsArticle-2 img {
+  float: right;
+  padding: 20px;
+}
+
+.SportsArticle-2 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #ffb4a2;
+  border-radius: 15px;
+  color: black;
+}
+
+.SportsArticle-2 h2 {
+  color: black;
+  text-align: justify;
+}
+
+
+
+.SportsArticle-3 {
+  grid-area: Article-3;
+}
+
+.SportsArticle-3 img {
+  float: right;
+  padding: 20px;
+}
+
+.SportsArticle-3 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #ffb4a2;
+  border-radius: 15px;
+  color: black;
+}
+
+.SportsArticle-3 h2 {
+  color: black;
+  text-align: justify;
+}
+
+.SportsArticle-4{
+  grid-area:Article-4;
+}
+
+.SportsArticle-4 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #ffb4a2;
+  border-radius: 15px;
+  color: black;
+}
+
+.SportsArticle-4 h2 {
+  color: black;
+  text-align: justify;
+}
+
+.SportsArticle-4 th{
+  color: black;
+  background: #BEE1E6;
+  
+}
+
+.SportsArticle-5{
+  grid-area:Article-5;
+}
+
+
+
+.SportsArticle-5 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #ffb4a2;
+  border-radius: 15px;
+  color: black;
+}
+
+.SportsArticle-5 h2 {
+  color: black;
+  text-align: justify;
+}
+
+.SportsArticle-5 th{
+  color: black;
+  background: #CDDAFD;
+  
+}
+
+
+#Footer {
+  grid-area: Footer;
+}
+
+.Sports1 {
+  grid-area: Sports1;
+}
+.grid-container-sports {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    "header header header header"
+    "stickyNav stickyNav stickyNav stickyNav"
+    "WelcomeSports WelcomeSports WelcomeSports WelcomeSports"
+    
+    "Article-1 Article-1 Article-1 Article-1"
+    "Article-2 Article-2 Article-2 Article-2"
+    "Article-3 Article-3 Article-3 Article-3"
+    "Article-4 Article-4 Article-5 Article-5"
+    
+    "Footer Footer Footer Footer";
+  grid-gap: 30px;
+}
+
+/*Clubs.html CSS------------------------------------*/
+
+#header {
+  grid-area: header;
+}
+
+.WelcomeClubs {
+  grid-area: WelcomeClubs;
+}
+
+.WelcomeClubs h1 {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+.WelcomeClubs h1 span {
+  color: #012A4A;
+}
+
+.stickyNav2{
+  grid-area: stickyNav2;
+  list-style: none;
+  background: #2C7DA0;
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+
+.stickyNav2{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.stickyNav2 li {
+  display: inline-block;
+}
+.stickyNav2 li a {
+  color: black;
+  text-decoration: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.stickyNav2 li a:hover {
+  background: #A9D6E5;
+  border-radius: 25px;
+  color: #333;
+}
+
+
+
+.ClubArticle-1 {
+  grid-area: ClubArticle-1;
+}
+
+.ClubArticle-1 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.ClubArticle-1 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #A9D6E5;
+  border-radius: 15px;
+  color: black;
+}
+
+.ClubArticle-1 h2 {
+  color: black;
+  text-align: justify;
+}
+
+.ClubArticle-2 {
+  grid-area: ClubArticle-2;
+}
+
+.ClubArticle-2 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.ClubArticle-2 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #A9D6E5;
+  border-radius: 15px;
+  color: black;
+}
+
+.ClubArticle-2 h2 {
+  color: black;
+  text-align: justify;
+}
+
+.ClubArticle-3 {
+  grid-area: ClubArticle-3;
+}
+
+.ClubArticle-3 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.ClubArticle-3 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #A9D6E5;
+  border-radius: 15px;
+  color: black;
+}
+
+.ClubArticle-3 h2 {
+  color: black;
+  text-align: justify;
+}
+
+#Footer {
+  grid-area: Footer;
+}
+
+.grid-container-clubs {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    "header header header"
+    "stickyNav2 stickyNav2 stickyNav2"
+    "WelcomeClubs WelcomeClubs WelcomeClubs"
+    
+    "ClubArticle-1 ClubArticle-1 ClubArticle-1"
+    "ClubArticle-2 ClubArticle-2 ClubArticle-2"
+    "ClubArticle-3 ClubArticle-3 ClubArticle-3"
+    "Footer Footer Footer";
+  grid-gap: 30px;
+}
+
+/*Esports.html CSS------------------------------------*/
+
+#header {
+  grid-area: header;
+}
+
+.WelcomeEsports {
+  grid-area: WelcomeEsports;
+}
+.WelcomeEsports h1 {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+.WelcomeEsports h1 span {
+  color: #C9A227;
+}
+
+.stickyNav3{
+  grid-area: stickyNav3;
+  list-style: none;
+  background: #DBB42C;
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+
+.stickyNav3{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.stickyNav3 li {
+  display: inline-block;
+}
+.stickyNav3 li a {
+  color: black;
+  text-decoration: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.stickyNav3 li a:hover {
+  background: #FFE169;
+  border-radius: 25px;
+  color: #333;
+}
+
+
+.Esports-1{
+  grid-area:Esports-1;
+}
+
+.Esports-1 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.Esports-1 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #FFE169;
+  border-radius: 15px;
+  color: black;
+}
+
+.Esports-1 h2 {
+  color: black;
+  text-align: justify;
+}
+
+.Esports-2{
+  grid-area:Esports-2;
+}
+
+.Esports-2 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.Esports-2 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #FFE169;
+  border-radius: 15px;
+  color: black;
+}
+
+.Esports-2 h2 {
+  color: black;
+  text-align: justify;
+}
+
+.FIFAcontent-1{
+  grid-area: fifa-1;
+}
+
+.FIFAcontent-1 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.FIFAcontent-1 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #FFE169;
+  border-radius: 15px;
+  color: black;
+}
+
+.FIFAcontent-1 h2 {
+  color: black;
+  text-align: justify;
+}
+
+.FIFAcontent-2{
+  grid-area: fifa-2;
+}
+
+.FIFAcontent-2 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.FIFAcontent-2 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #FFE169;
+  border-radius: 15px;
+  color: black;
+}
+
+.FIFAcontent-2 h2 {
+  color: black;
+  text-align: justify;
+}
+
+.Esports-3{
+  grid-area:Esports-3;
+}
+
+.Esports-3 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.Esports-3 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #FFE169;
+  border-radius: 15px;
+  color: black;
+}
+
+.Esports-3 h2 {
+  color: black;
+  text-align: justify;
+}
+
+
+
+
+
+#Footer {
+  grid-area: Footer;
+}
+
+.grid-container-esports {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    "header header header header"
+    "stickyNav3 stickyNav3 stickyNav3 stickyNav3"
+    "WelcomeEsports WelcomeEsports WelcomeEsports WelcomeEsports"
+    
+    "Esports-1 Esports-1 Esports-1 Esports-1"
+    "Esports-2 Esports-2 Esports-2 Esports-2"
+    "fifa-1 fifa-1 fifa-2 fifa-2"
+    "Esports-3 Esports-3 Esports-3 Esports-3"
+     "Footer Footer Footer Footer";
+  grid-gap: 30px;
+}
+
+
+/*Leisure.html CSS------------------------------------*/
+
+#header {
+  grid-area: header;
+}
+
+.WelcomeLeisure {
+  grid-area: WelcomeLeisure;
+}
+
+.WelcomeLeisure h1 {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+.WelcomeLeisure h1 span {
+  color: #AA80FF;
+}
+
+.stickyNav4{
+  grid-area: stickyNav4;
+  list-style: none;
+  background: #B79DFF;
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+
+.stickyNav4{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.stickyNav4 li {
+  display: inline-block;
+}
+.stickyNav4 li a {
+  color: black;
+  text-decoration: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.stickyNav4 li a:hover {
+  background: #CCCCFF;
+  border-radius: 25px;
+  color: #333;
+}
+
+.LeisureArticle-1 {
+  grid-area: Leisure1;
+}
+
+.LeisureArticle-1 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.LeisureArticle-1 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #CCCCFF;
+  border-radius: 15px;
+  color: black;
+}
+
+.LeisureArticle-1 h2 {
+  color: black;
+  text-align: justify;
+}
+
+
+
+.LeisureArticle-2 {
+  grid-area: Leisure2;
+}
+
+.LeisureArticle-2 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.LeisureArticle-2 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #CCCCFF;
+  border-radius: 15px;
+  color: black;
+}
+
+.LeisureArticle-2 h2 {
+  color: black;
+  text-align: justify;
+}
+
+
+
+.CookingVid {
+  grid-area: CookingVid;
+}
+
+.CookingVid video {
+  float: right;
+  padding: 20px;
+  
+}
+
+.CookingVid {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #CCCCFF;
+  border-radius: 15px;
+  color: black;
+}
+
+.CookingVid h2 {
+  color: black;
+  text-align: justify;
+}
+
+.LeisureArticle-3 {
+  grid-area: Leisure3;
+}
+
+.LeisureArticle-3 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.LeisureArticle-3 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #CCCCFF;
+  border-radius: 15px;
+  color: black;
+}
+
+.LeisureArticle-3 h2 {
+  color: black;
+  text-align: justify;
+}
+.LeisureArticle-4 {
+  grid-area: Leisure4;
+}
+
+.LeisureArticle-4 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.LeisureArticle-4 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #CCCCFF;
+  border-radius: 15px;
+  color: black;
+}
+
+.LeisureArticle-4 h2 {
+  color: black;
+  text-align: justify;
+}
+
+#Footer {
+  grid-area: Footer;
+}
+
+.grid-container-leisure {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas:
+    "header header header header"
+    "stickyNav4 stickyNav4 stickyNav4 stickyNav4"
+    "WelcomeLeisure WelcomeLeisure WelcomeLeisure WelcomeLeisure"
+    
+    "Leisure1 Leisure1 Leisure2 Leisure2"
+    "CookingVid CookingVid CookingVid CookingVid"
+    "Leisure3 Leisure3 Leisure4 Leisure4"
+    "Footer Footer Footer Footer";
+  grid-gap: 30px;
+}
+
+/*Health.html CSS------------------------------------*/
+
+#header {
+  grid-area: header;
+}
+
+.WelcomeHealth {
+  grid-area: WelcomeHealth;
+}
+
+.WelcomeHealth h1 {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.WelcomeHealth h1 span {
+  color: #6B9080;
+}
+
+.stickyNav5{
+  grid-area: stickyNav5;
+  list-style: none;
+  background: #A4C3B2;
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+
+.stickyNav5{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.stickyNav5 li {
+  display: inline-block;
+}
+.stickyNav5 li a {
+  color: black;
+  text-decoration: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.stickyNav5 li a:hover {
+  background: #CCE3DE;
+  border-radius: 25px;
+  color: #333;
+}
+
+.HealthArticle-1 {
+  grid-area: Health-1;
+}
+
+.HealthArticle-1 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.HealthArticle-1 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #EAF4F4;
+  border-radius: 15px;
+  color: black;
+}
+
+.HealthArticle-1 h2 {
+  color: black;
+  text-align: justify;
+}
+
+.HealthArticle-2 {
+  grid-area: Health-2;
+}
+
+.HealthArticle-2 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.HealthArticle-2 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #EAF4F4;
+  border-radius: 15px;
+  color: black;
+}
+
+.HealthArticle-2 h2 {
+  color: black;
+  text-align: justify;
+}
+
+.HealthArticle-3 {
+  grid-area: Health-3;
+}
+
+
+.HealthArticle-3 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.HealthArticle-3 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #EAF4F4;
+  border-radius: 15px;
+  color: black;
+}
+
+.HealthArticle-3 h2 {
+  color: black;
+  text-align: justify;
+}
+
+.HealthArticle-4{
+  grid-area: Health-4;
+}
+
+.HealthArticle-4 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.HealthArticle-4 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #EAF4F4;
+  border-radius: 15px;
+  color: black;
+}
+
+.HealthArticle-4 h2 {
+  color: black;
+  text-align: justify;
+}
+
+.HealthArticle-5{
+  grid-area: Health-5;
+}
+
+.HealthArticle-5 img {
+  float: right;
+  padding: 20px;
+  
+}
+
+.HealthArticle-5 {
+  text-align: left;
+  text-align: justify;
+  padding: 30px;
+  background: #EAF4F4;
+  border-radius: 15px;
+  color: black;
+}
+
+.HealthArticle-5 h2 {
+  color: black;
+  text-align: justify;
+}
+
+
+#Footer {
+  grid-area: Footer;
+}
+
+.grid-container-health {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas:
+    "header header header header"
+    "stickyNav5 stickyNav5 stickyNav5 stickyNav5"
+    "WelcomeHealth WelcomeHealth WelcomeHealth WelcomeHealth "
+    
+    "Health-1 Health-1 Health-1 Health-1"
+    "Health-2 Health-2 Health-2 Health-2"
+    "Health-3 Health-3 Health-3 Health-3"
+    "Health-4 Health-4 Health-5 Health-5"
+    "Footer Footer Footer Footer";
+  grid-gap: 30px;
+}
+
+
+
+/*Subscribe.html CSS------------------------------------*/
+#header {
+  grid-area: header;
+}
+#Footer {
+  grid-area: Footer;
+}
+.SportsTab {
+  grid-area: Sports;
+}
+.ClubsTab {
+  grid-area: Clubs;
+}
+.EsportsTab {
+  grid-area: Esports;
+}
+.LeisureTab {
+  grid-area: Leisure;
+}
+.HealthTab {
+  grid-area: Health;
+}
+.SubscribeTab {
+  grid-area: Subscribe;
+}
+
+.grid-container-subscribe {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    "header header header"
+    "Sports Sports Sports"
+    "Clubs Clubs Clubs"
+    "Esports Esports Esports"
+    "Leisure Leisure Leisure"
+    "Health Health Health"
+    "Subscribe Subscribe Subscribe"
+    "Footer Footer Footer";
+  grid-gap: 30px;
+}
